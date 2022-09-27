@@ -6,13 +6,14 @@ export const ContainerFooter = styled.div`
   box-sizing: border-box;
   background-color: #000;
   color: #fff;
+  width: 100%;
   height: 240px;
   padding: 30px 156px 0;
 `
 
 export const Footer = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 5fr 5fr;
   grid-row-gap: 9.8px;
 `
@@ -31,7 +32,7 @@ export const FooterItems = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-right: 17rem; */
+    padding-right: 13rem;
   }
 
   p {
@@ -63,10 +64,14 @@ export const FooterDesList = styled.ul`
       padding-left: 21px;
     }
   }
+
+  li:nth-child(2) {
+    margin: 0 20px;
+  }
 `
 
 export const FooterIcon = styled.div`
   img {
-    margin-left: 21px;
+    margin-left: 26px;
   }
 `
