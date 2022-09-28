@@ -1,21 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 import Mail from '../../../assets/SignInIconMail.svg'
-import Lock from '../../../assets/SignInIconLock.svg'
-import SignInBg from '../../../assets/SignInBg.png'
-import Logo from '../../../../assets/HeaderLogo.png'
 
 
-const ContainersSignIn = styled.div``
-const SignIn = styled.div``
+const ContainersInputMail = styled.div`
+  position: relative;
+`
+
+const InputMail = styled.input`
+  width: 99%;
+  padding-bottom: 0.5rem;
+  border-style: none none solid;
+  border-bottom: solid 1px #1687F7;
+`
+
+const InputIconMail = styled.div`
+  position: absolute;
+  top: -1px;
+  right: 4px;
+`
 
 function Email() {
   return (
-    <ContainersSignIn>
-      <SignIn>
-        
-      </SignIn>
-    </ContainersSignIn>
+    <ContainersInputMail>
+      <InputMail placeholder='Email' type="text" />
+      <InputIconMail>
+        <img src={Mail} alt="" />
+      </InputIconMail>
+    </ContainersInputMail>
   )
 }
 
