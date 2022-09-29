@@ -59,6 +59,7 @@ export const BtnSignIn = styled.button`
   box-shadow: 0px 10px 20px rgba(86, 196, 249, 0.3);
   border-radius: 15px;
   margin: 2.3125em 0 2.0625em;
+  cursor: pointer;
 `
 
 export const LinkSignIn = styled.div`

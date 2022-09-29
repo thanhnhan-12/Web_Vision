@@ -48,4 +48,6 @@ export const HeaderBtnSignUp = styled.button`
   color: #fff;
   font-weight: 500;
   font-size: 16px;
+  cursor: pointer;
+
 `

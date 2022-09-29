@@ -23,7 +23,7 @@ const InputIconMail = styled.div`
 function Email() {
   return (
     <ContainersInputMail>
-      <InputMail placeholder='Email' type="text" />
+      <InputMail placeholder='Email' type="email" />
       <InputIconMail>
         <img src={Mail} alt="" />
       </InputIconMail>

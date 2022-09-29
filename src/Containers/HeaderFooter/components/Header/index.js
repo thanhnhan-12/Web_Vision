@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as S from './styles'
 import Logo from '../../../../assets/HeaderLogo.png'
 
 function Header() {
+  const [changeColor, setChangeColor] = useState(false);
+  const [changeText, setChangeText] = useState(false);
+
+  const handleClick = () => {
+    setChangeColor(!changeColor);
+    setChangeText(!changeText);
+  };
+
   return (
     <S.ContainerHeader>
       <S.Header>
@@ -19,7 +27,15 @@ function Header() {
           <li><a href="/">FAQ</a></li>
         </S.HeaderSubNav>
 
-        <S.HeaderBtnSignUp>Sign Up</S.HeaderBtnSignUp>
+        <S.HeaderBtnSignUp
+          style={{
+            backgroundColor: changeColor ? 'salmon' : '',
+            
+          }}
+          onClick={handleClick}
+        >
+           {changeText ? "Sign In" : "Sign Up" }
+        </S.HeaderBtnSignUp>
 
       </S.HeaderNav>
     </S.ContainerHeader>
