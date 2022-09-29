@@ -1,8 +1,9 @@
 import React from 'react'
 import * as S from './styles'
 import Logo from '../../../../assets/HeaderLogo.png'
-import Email from '../../Input/Email'
-import Pass from '../../Input/Pass'
+import Email from './Input/Email'
+import Pass from './Input/Pass'
+
 
 
 function SignIn() {
@@ -17,7 +18,7 @@ function SignIn() {
           <S.SignInForm>
             <h4>SIGN IN</h4>
             <p>Pleas sign in to continue</p>
-            <Email />
+            <Email/>
             <Pass />
             <S.BtnSignIn>Sign In</S.BtnSignIn>
             <S.LinkSignIn>

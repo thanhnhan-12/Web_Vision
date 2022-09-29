@@ -48,6 +48,18 @@ export const SignUpForm = styled.form`
     margin: 5px 0 30px;
   }
 `
+
+export const SignUpFormEnter = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`
+
+export const SignUpFormLabel = styled.div`
+  display: grid;
+`
+
+export const SignUpFormInput = styled.div``
+
 export const BtnSignUp = styled.button`
   width: 100%;
   height: 46px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Lock from '../../../assets/SignInIconLock.svg'
+import Lock from '../../../../../assets/SignInIconLock.svg'
 
 const ContainersInputLock = styled.div`
   position: relative;

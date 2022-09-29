@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Mail from '../../../assets/SignInIconMail.svg'
-
+import Mail from '../../../../../assets/SignInIconMail.svg'
 
 const ContainersInputMail = styled.div`
   position: relative;
@@ -32,3 +31,9 @@ function Email() {
 }
 
 export default Email
+
+
+
+
+
+
